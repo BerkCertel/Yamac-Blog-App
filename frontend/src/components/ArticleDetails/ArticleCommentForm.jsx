@@ -9,7 +9,6 @@ function ArticleCommentForm({ articleId }) {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
 
-  const token = localStorage.getItem("token");
   const isButtonDisabled = user?.user ? true : false;
 
   const handleSubmit = (e) => {
@@ -22,11 +21,6 @@ function ArticleCommentForm({ articleId }) {
 
     if (!isButtonDisabled) {
       toast.error("Önce Giriş Yapın.");
-      return;
-    }
-
-    if (!token) {
-      toast.error("Yorum eklemek için giriş yapmanız gerekiyor.");
       return;
     }
 
