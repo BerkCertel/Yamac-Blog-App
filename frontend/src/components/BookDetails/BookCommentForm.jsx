@@ -12,7 +12,7 @@ function BookCommentForm({ bookId }) {
   const token = localStorage.getItem("token");
   const userId = user?.user?._id;
 
-  const isButtonDisabled = !token && user?.user;
+  const isButtonDisabled = !token;
 
   const handleSubmit = (e) => {
     e.preventDefault();
