@@ -9,10 +9,9 @@ function BookCommentForm({ bookId }) {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
 
-  const token = localStorage.getItem("token");
   const userId = user?.user?._id;
 
-  const isButtonDisabled = !token;
+  const isButtonDisabled = user?.user ? true : false;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,11 +23,6 @@ function BookCommentForm({ bookId }) {
 
     if (!isButtonDisabled) {
       toast.error("Önce Giriş Yapın.");
-      return;
-    }
-
-    if (!token) {
-      toast.error("Yorum eklemek için giriş yapmalısınız.");
       return;
     }
 

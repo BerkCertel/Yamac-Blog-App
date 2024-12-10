@@ -10,7 +10,7 @@ function ArticleCommentForm({ articleId }) {
   const { user } = useSelector((state) => state.user);
 
   const token = localStorage.getItem("token");
-  const isButtonDisabled = !token;
+  const isButtonDisabled = user?.user ? true : false;
 
   const handleSubmit = (e) => {
     e.preventDefault();
