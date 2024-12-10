@@ -22,7 +22,7 @@ function AdminCreateBook() {
 
   const handleSubmit = () => {
     dispatch(addAdminArticle(data));
-
+    window.location.reload();
     setData({
       name: "",
       description: "",

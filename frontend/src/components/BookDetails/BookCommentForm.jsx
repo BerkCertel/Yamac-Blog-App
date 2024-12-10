@@ -12,13 +12,18 @@ function BookCommentForm({ bookId }) {
   const token = localStorage.getItem("token");
   const userId = user?.user?._id;
 
-  const isButtonDisabled = !token || !comment; // Token yoksa veya yorum boşsa buton devre dışı
+  const isButtonDisabled = !token && user?.user;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!comment) {
       toast.error("Yorum boş bırakılamaz.");
+      return;
+    }
+
+    if (!isButtonDisabled) {
+      toast.error("Önce Giriş Yapın.");
       return;
     }
 
@@ -29,6 +34,7 @@ function BookCommentForm({ bookId }) {
 
     const reviewData = { bookId, comment, userId };
     dispatch(addReview(reviewData));
+    window.location.reload();
     setComment("");
   };
 

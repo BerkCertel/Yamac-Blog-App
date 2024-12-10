@@ -10,14 +10,18 @@ function ArticleCommentForm({ articleId }) {
   const { user } = useSelector((state) => state.user);
 
   const token = localStorage.getItem("token");
-  const isAuth = !user?.user || !token; // Kullanıcı veya token yoksa giriş yapılmamış demektir
-  const isButtonDisabled = !comment || isAuth; // Yorum boşsa veya giriş yapılmamışsa buton devre dışı
+  const isButtonDisabled = !token && !user?.user;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!comment) {
       toast.error("Yorum boş bırakılamaz.");
+      return;
+    }
+
+    if (!isButtonDisabled) {
+      toast.error("Önce Giriş Yapın.");
       return;
     }
 
@@ -28,6 +32,7 @@ function ArticleCommentForm({ articleId }) {
 
     const reviewData = { articleId, comment, userId: user?.user?._id };
     dispatch(addArticleReview(reviewData));
+    window.location.reload();
     setComment("");
   };
 
@@ -49,7 +54,7 @@ function ArticleCommentForm({ articleId }) {
           <button
             type="submit"
             className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition"
-            disabled={isButtonDisabled} // Giriş yapılmadığında buton devre dışı
+            disabled={isButtonDisabled}
           >
             Yorum Ekle
           </button>

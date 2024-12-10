@@ -40,7 +40,6 @@ export const addReview = createAsyncThunk(
   "reviews/addReview",
   async (reviewData, { rejectWithValue }) => {
     try {
-      console.log(reviewData);
       const token = localStorage.getItem("token");
       const response = await fetch(
         `${import.meta.env.VITE_API_URL}/book/newReview`,
