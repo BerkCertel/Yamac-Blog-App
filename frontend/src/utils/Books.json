@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "url": "/images/Books/book1.jpg",
+    "name": "Kıyamet Aforizmaları",
+    "writingdate": {
+      "day": "23",
+      "month": "10",
+      "year": "2020"
+    },
+    "description": "Kıyamet nedir sizce?  Dünyada adaletin zenginlerin elinde olması ve sadece fakirler için uygulanması, insanlığın kıyameti değil mi! Çocukların en güvenli limanı annesi ve babası iken, bir babanın öz çocuğuna tecavüz etmesi ve bir annenin sevgilisi ile kendi öz çocuğunu istismar etmesi bu insanlığın kıyameti olamaz mı? Söyleyin bana malın, mülkün ve makamın bir insanın canından değerli olduğu bu düzen,insanlığın kıyameti olamaz mı? Kıyameti doğa olaylarında ve salgınlarda arayanlar! Kıyameti görmek için insanlığın yozlaştığı şu toplumlara bir bakın..."
+  },
+  {
+    "id": 2,
+    "url": "/images/Books/book2.jpg",
+    "name": "Fezmonot",
+    "writingdate": {
+      "day": "23",
+      "month": "10",
+      "year": "2020"
+    },
+    "description": "Dünyanın gidişatını değiştirecek ani bir hortlak virüsü salgını ile birlikte yeni bir dünya düzeni kuran Yamaç’ın Altınçağ’a geçiş mücadelesini anlatan ütopik, distopik ve bilim kurgu bir romandır."
+  },
+
+  {
+    "id": 3,
+    "url": "/images/Books/book3.jpg",
+    "name": "Paranormal Ofis",
+    "writingdate": {
+      "day": "23",
+      "month": "10",
+      "year": "2020"
+    },
+    "description": "Mensubu olduğu ordudan ani bir karar ile istifa ederek yıllardır hayalini kurduğu paranormal ofisi kurup, kendi alanında uzman takım arkadaşlarıyla beraber paranormal olayları araştırıp çözmeye başlayan Yamaç’ın gizemlerle dolu olaylara akılcı çözümler bulduğu paranormal bir romandır."
+  },
+  {
+    "id": 4,
+    "url": "/images/Books/book4.jpg",
+    "writingdate": {
+      "day": "23",
+      "month": "10",
+      "year": "2020"
+    },
+    "name": "Bilgelik Aforizmaları",
+    "description": "92 sayfa ve 85 aforizmadan oluşmaktadır. Aforizma; özlü söz, özdeyiş ve aykırı söz demektir. Bu kitabı okuduğunuzda fazla yorulmayacaksınız lakin, başınızı yastığa koyduğunuzda beyniniz düşünecek ve zihniniz yorulacak. Ayrıca hayata farklı bakış açısıyla bakmayı ve sorgulamayı öğreneceksiniz."
+  },
+  {
+    "id": 5,
+    "url": "/images/Books/book5.jpg",
+    "name": "Çiptilyan",
+    "writingdate": {
+      "day": "23",
+      "month": "10",
+      "year": "2020"
+    },
+    "description": " Dünya bir felaketin eşiğinde, insanlar izole bir yaşamın mahkumu. Ülkeler çaresizce salgının çözümünü ararken, Türkiye’nin derinlerinde, Dr. Vadigit ve ekibi, gizli bir laboratuvarda insanlığın son umudu olacak bir çözüm arayışında. Ancak sıradan bir aşı çalışmasının ötesinde, bambaşka bir güç peşindeler. Yapay zekalar, biyolojik robotlar ve ruhun sınırlarını zorlayan deneylerle, insanlığın geleceğini şekillendirecek büyük bir proje adım adım ilerliyor. Peki, bu bilimsel arayış, insanlığı kurtaracak mı, yoksa bilinmeyene sürükleyecek bir yıkımın kapılarını mı aralayacak?  “ÇİPTİLYAN” – Bilimin ve mistisizmin iç içe geçtiği bu destanda, insanlığın hayatta kalma mücadelesine tanık olun."
+  }
+]
