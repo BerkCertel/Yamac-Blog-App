@@ -11,7 +11,7 @@ function BookCommentForm({ bookId }) {
 
   const userId = user?.user?._id;
 
-  const isButtonDisabled = user?.user ? true : false;
+  const isButtonDisabled = user?.user._id ? true : false;
 
   const handleSubmit = (e) => {
     e.preventDefault();

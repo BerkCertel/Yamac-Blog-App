@@ -9,7 +9,7 @@ function ArticleCommentForm({ articleId }) {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
 
-  const isButtonDisabled = user?.user ? true : false;
+  const isButtonDisabled = user?.user._id ? true : false;
 
   const handleSubmit = (e) => {
     e.preventDefault();
